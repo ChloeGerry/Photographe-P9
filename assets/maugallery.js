@@ -67,13 +67,8 @@
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
-      if (
-        !element
-          .children()
-          .first()
-          .hasClass("row")
-      ) {
-        element.append('<div class="gallery-items-row row"></div>');
+      if (!element.children().first().hasClass("row")) {
+        element.append('<div class="gallery-items-row row"></div>')
       }
     },
     wrapItemInColumn(element, columns) {
