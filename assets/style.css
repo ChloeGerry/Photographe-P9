@@ -196,6 +196,10 @@ body {
 	z-index: 1;
 }
 
+.footer__contact {
+	margin-bottom: 64px;
+}
+
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
