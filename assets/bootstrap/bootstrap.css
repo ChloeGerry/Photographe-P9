@@ -6935,8 +6935,14 @@ textarea.form-control-lg {
 .w-100 {
   width: 100% !important;
   /* height: 666px; */
-  height: 100%;
+  height: fit-content;
   object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .w-100 {
+    height: 100%;
+  }
 }
 
 .w-auto {

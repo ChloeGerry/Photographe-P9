@@ -70,7 +70,7 @@ body {
 
 .picture img {
 	width: 100%;
-	height: 100%;
+	height: 400px;
 	object-fit: contain;
 }
 #about-me {
@@ -100,7 +100,7 @@ body {
 .title {
 	text-align: center;
 	padding-block: 2em;
-	font-size: 1.75rem;
+	font-size: calc(1.3rem + 0.6vw);
 }
 .gallery .nav {
 	justify-content: center;
@@ -127,7 +127,7 @@ body {
 .gallery-item {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 400px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -152,7 +152,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-	font-size: 2.5rem;
+	font-size: calc(1.375rem + 1.5vw);
 	line-height: 1.2;
 }
 .quote__author {
@@ -291,6 +291,7 @@ input[type="submit"] {
 		text-align: center;
 		margin-top: 1em;
 	}
+
 	#services .container {
 		flex-direction: column;
 	}
@@ -346,6 +347,11 @@ input[type="submit"] {
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
+	.about-me__introduction {
+		width: 100%;
+	}
+
 	#services .container {
 		align-items: center;
 	}
@@ -361,6 +367,14 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+
+	.picture img {
+		height: 100%;
+	}
+
+	.gallery-item {
+		height: 100%;
 	}
 }
 
