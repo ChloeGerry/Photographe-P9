@@ -6934,7 +6934,9 @@ textarea.form-control-lg {
 
 .w-100 {
   width: 100% !important;
-  height: 666px;
+  /* height: 666px; */
+  height: 100%;
+  object-fit: contain;
 }
 
 .w-auto {
@@ -8602,6 +8604,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
+
 @media (min-width: 768px) {
   .float-md-start {
     float: left !important;
