@@ -30,7 +30,7 @@
 	<body>
 		<header class="header">
 			<h1 itemscope itemtype="https://schema.org/Person" itemprop="creator" class="name">Nina Carducci</h1>
-			<nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="nav">   
+			<nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="nav" role="navigation">   
 				<ul>
 					<li><a href="#about" itemprop="about">À propos</a></li>
 					<li><a href="#gallery" itemprop="workExample">Galerie</a></li>
@@ -40,8 +40,8 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<div id="banner">
+		<main role="main">
+			<div id="banner" role="banner">
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,24 +50,24 @@
 					</div>
 					<div itemscope itemtype="https://schema.org/ImageGallery" class="carousel-inner">
 						<picture class="carousel-item active">
-							<!-- <source itemprop="image" srcset="./assets/images/slider/man-walking-small.webp" class="d-block w-100" type="image/webp"> -->
+							<source itemprop="image" srcset="./assets/images/slider/man-walking-small.webp" class="d-block w-100" type="image/webp">
 							<img itemprop="image" src="./assets/images/slider/man-walking-small.jpg" class="d-block w-100" alt="Un homme qui marche dans la rue avec une malette">
 						</picture>
 						<picture class="carousel-item">
-							<!-- <source itemprop="image" srcset="./assets/images/slider/concert-small.webp" class="d-block w-100" type="image/webp"> -->
+							<source itemprop="image" srcset="./assets/images/slider/concert-small.webp" class="d-block w-100" type="image/webp">
 							<img itemprop="image" src="./assets/images/slider/concert-small.jpg" class="d-block w-100" alt="Des personnes qui profitent d'un concert">
 						</picture>
 						<picture class="carousel-item">
-							<!-- <source itemprop="image" srcset="./assets/images/slider/wedding-small.webp" class="d-block w-100" type="image/webp"> -->
+							<source itemprop="image" srcset="./assets/images/slider/wedding-small.webp" class="d-block w-100" type="image/webp">
 							<img itemprop="image" src="./assets/images/slider/wedding-small.jpg" class="d-block w-100" alt="Un couple qui s'embrasse le jour de leur mariage">
 						</picture>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Slide précédente">
+						<span class="carousel-control-prev-icon"></span>
 						<span class="visually-hidden">Previous</span>
 					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Slide suivante">
+						<span class="carousel-control-next-icon"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
@@ -183,7 +183,7 @@
 				<figcaption itemprop="author" class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</main>
-		<footer id="contact">
+		<footer id="contact" role="contentinfo">
 			<section itemscope itemtype="https://schema.org/LocalBusiness" class="footer__contact">
 				<h2 itemprop="name">Mes coordonnées</h2>
 				<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -198,7 +198,7 @@
 				<meta itemprop="openingHours" content="Mo-Fr 10:00-19:00">Je réponds au téléphone du lundi au vendredi de 10h à 19h
 			</section>
 			<section class="container">
-				<div class="form-container">
+				<div class="form-container" role="form">
 					<h2>Une question ? Une demande de devis ?</h2>
 					<p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="#" method="post" itemscope itemtype="https://schema.org/ContactPoint">
